@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sour Search</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 5px;
+            position: relative; /* Added */
+        }
+
+        .container h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .lemon-image {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+        }
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #4285F4;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #357AE8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="lemon-image" src="https://static.vecteezy.com/system/resources/thumbnails/008/508/374/small/lemon-on-isolated-background-png.png" alt="Lemon">
+        <h1>Sour Search</h1>
+        <form class="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+            <input class="search-input" type="text" name="q" placeholder="Search on Google" required>
+            <button class="search-button" type="submit">Search</button>
+        </form>
+    </div>
+</body>
+
+</html>
